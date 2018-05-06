@@ -28,4 +28,13 @@ struct AVController {
     static func redirect(_ req: Request) throws -> Future<Response> {
         return try get(req).map { req.redirect(to: $0) }
     }
+
+    static func download(_ req: Request) throws -> Future<Response> {
+        return try get(req).flatMap { url in
+            try req.client().get(url).map { response in
+                response.http.headers.add(name: .contentDisposition, value: "attachment")
+                return response
+            }
+        }
+    }
 }
