@@ -1,25 +1,15 @@
 import Vapor
 
-final class Routes: RouteCollection {
-    let view: ViewRenderer
-    init(_ view: ViewRenderer) {
-        self.view = view
+/// Register your application's routes here.
+public func routes(_ router: Router) throws {
+    // Basic "Hello, world!" example
+    router.get("hello") { req in
+        return "Hello, world!"
     }
 
-    func build(_ builder: RouteBuilder) throws {
-        /// GET /
-        builder.get { req in
-            return try self.view.make("welcome")
-        }
-
-        /// GET /hello/...
-        builder.resource("hello", HelloController(view))
-
-        // response to requests to /info domain
-        // with a description of the request
-        builder.get("info") { req in
-            return req.description
-        }
-
-    }
+    // Example of configuring a controller
+    let todoController = TodoController()
+    router.get("todos", use: todoController.index)
+    router.post("todos", use: todoController.create)
+    router.delete("todos", Todo.parameter, use: todoController.delete)
 }
