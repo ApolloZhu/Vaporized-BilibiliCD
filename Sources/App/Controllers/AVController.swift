@@ -10,16 +10,22 @@ import Foundation
 import BilibiliKit
 
 struct AVController {
-    static func get(_ req: Request) throws -> Future<Response> {
-        let aid = try req.parameters.next(Int.self)
-        let video = BKVideo(av: aid)
-        let promise = req.eventLoop.newPromise(Response.self)
-        video.getInfo {
-            guard let url = $0?.coverImageURL.absoluteString else {
+    static func url(for aid: Int) -> Future<String> {
+        let promise = EmbeddedEventLoop().newPromise(String.self)
+        BKVideo(av: aid).getInfo {
+            guard let url = $0?.coverImageURL else {
                 return promise.fail(error: Abort(.notFound))
             }
-            promise.succeed(result: req.redirect(to: url))
+            promise.succeed(result: url.absoluteString)
         }
         return promise.futureResult
+    }
+
+    static func get(_ req: Request) throws -> Future<String> {
+        return url(for: try req.parameters.next(Int.self))
+    }
+
+    static func redirect(_ req: Request) throws -> Future<Response> {
+        return try get(req).map { req.redirect(to: $0) }
     }
 }
