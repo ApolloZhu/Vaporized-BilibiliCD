@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "BilibiliKit",
+        "repositoryURL": "https://github.com/ApolloZhu/BilibiliKit",
+        "state": {
+          "branch": null,
+          "revision": "9fe6b5a88fe097758cb3c79245fa6297b6d7dc80",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "Console",
         "repositoryURL": "https://github.com/vapor/console.git",
         "state": {
