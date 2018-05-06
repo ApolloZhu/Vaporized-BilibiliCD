@@ -7,7 +7,7 @@ let package = Package(
     name: "Vaporized-BilibiliCD",
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
-        .package(url: "https://github.com/ApolloZhu/BilibiliKit", from: "1.0.0"),
+        .package(url: "https://github.com/ApolloZhu/BilibiliKit", from: "1.0.1"),
     ],
     targets: [
         .target(name: "App", dependencies: ["Vapor", "BilibiliKit"]),

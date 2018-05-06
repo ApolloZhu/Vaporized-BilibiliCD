@@ -14,149 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::CNIOSHA1"
-               BuildableName = "CNIOSHA1.framework"
-               BlueprintName = "CNIOSHA1"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::CNIOLinux"
-               BuildableName = "CNIOLinux.framework"
-               BlueprintName = "CNIOLinux"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::CNIODarwin"
-               BuildableName = "CNIODarwin.framework"
-               BlueprintName = "CNIODarwin"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::NIOConcurrencyHelpers"
-               BuildableName = "NIOConcurrencyHelpers.framework"
-               BlueprintName = "NIOConcurrencyHelpers"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "URLEncodedForm::URLEncodedForm"
-               BuildableName = "URLEncodedForm.framework"
-               BlueprintName = "URLEncodedForm"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Routing::Routing"
-               BuildableName = "Routing.framework"
-               BlueprintName = "Routing"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Console::Command"
-               BuildableName = "Command.framework"
-               BlueprintName = "Command"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Vapor::Vapor"
-               BuildableName = "Vapor.framework"
-               BlueprintName = "Vapor"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BilibiliKit::BilibiliKit"
-               BuildableName = "BilibiliKit.framework"
-               BlueprintName = "BilibiliKit"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Crypto::Crypto"
-               BuildableName = "Crypto.framework"
-               BlueprintName = "Crypto"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio-ssl::CNIOOpenSSL"
-               BuildableName = "CNIOOpenSSL.framework"
-               BlueprintName = "CNIOOpenSSL"
+               BlueprintIdentifier = "Multipart::Multipart"
+               BuildableName = "Multipart.framework"
+               BlueprintName = "Multipart"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -182,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Core::Core"
-               BuildableName = "Core.framework"
-               BlueprintName = "Core"
+               BlueprintIdentifier = "Core::Debugging"
+               BuildableName = "Debugging.framework"
+               BlueprintName = "Debugging"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -196,191 +56,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::NIOTLS"
-               BuildableName = "NIOTLS.framework"
-               BlueprintName = "NIOTLS"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Core::COperatingSystem"
-               BuildableName = "COperatingSystem.framework"
-               BlueprintName = "COperatingSystem"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Console::Console"
-               BuildableName = "Console.framework"
-               BlueprintName = "Console"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Core::Async"
-               BuildableName = "Async.framework"
-               BlueprintName = "Async"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::NIOHTTP1"
-               BuildableName = "NIOHTTP1.framework"
-               BlueprintName = "NIOHTTP1"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Core::Bits"
-               BuildableName = "Bits.framework"
-               BlueprintName = "Bits"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::NIO"
-               BuildableName = "NIO.framework"
-               BlueprintName = "NIO"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Crypto::libbcrypt"
-               BuildableName = "libbcrypt.framework"
-               BlueprintName = "libbcrypt"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio-ssl::NIOOpenSSL"
-               BuildableName = "NIOOpenSSL.framework"
-               BlueprintName = "NIOOpenSSL"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Service::Service"
-               BuildableName = "Service.framework"
-               BlueprintName = "Service"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "HTTP::HTTP"
-               BuildableName = "HTTP.framework"
-               BlueprintName = "HTTP"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::CNIOAtomics"
-               BuildableName = "CNIOAtomics.framework"
-               BlueprintName = "CNIOAtomics"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Vaporized-BilibiliCD::Run"
-               BuildableName = "Run"
-               BlueprintName = "Run"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::CNIOHTTPParser"
-               BuildableName = "CNIOHTTPParser.framework"
-               BlueprintName = "CNIOHTTPParser"
+               BlueprintIdentifier = "swift-nio::CNIODarwin"
+               BuildableName = "CNIODarwin.framework"
+               BlueprintName = "CNIODarwin"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -406,6 +84,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Console::Console"
+               BuildableName = "Console.framework"
+               BlueprintName = "Console"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Service::Service"
+               BuildableName = "Service.framework"
+               BlueprintName = "Service"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Console::Logging"
                BuildableName = "Logging.framework"
                BlueprintName = "Logging"
@@ -420,9 +126,205 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Core::Core"
+               BuildableName = "Core.framework"
+               BlueprintName = "Core"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "swift-nio::NIOFoundationCompat"
                BuildableName = "NIOFoundationCompat.framework"
                BlueprintName = "NIOFoundationCompat"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::CNIOAtomics"
+               BuildableName = "CNIOAtomics.framework"
+               BlueprintName = "CNIOAtomics"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Vapor::Vapor"
+               BuildableName = "Vapor.framework"
+               BlueprintName = "Vapor"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Core::COperatingSystem"
+               BuildableName = "COperatingSystem.framework"
+               BlueprintName = "COperatingSystem"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio-ssl::NIOOpenSSL"
+               BuildableName = "NIOOpenSSL.framework"
+               BlueprintName = "NIOOpenSSL"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Crypto::Random"
+               BuildableName = "Random.framework"
+               BlueprintName = "Random"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::NIOHTTP1"
+               BuildableName = "NIOHTTP1.framework"
+               BlueprintName = "NIOHTTP1"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Core::Async"
+               BuildableName = "Async.framework"
+               BlueprintName = "Async"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Core::Bits"
+               BuildableName = "Bits.framework"
+               BlueprintName = "Bits"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::NIOPriorityQueue"
+               BuildableName = "NIOPriorityQueue.framework"
+               BlueprintName = "NIOPriorityQueue"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::CNIOLinux"
+               BuildableName = "CNIOLinux.framework"
+               BlueprintName = "CNIOLinux"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "HTTP::HTTP"
+               BuildableName = "HTTP.framework"
+               BlueprintName = "HTTP"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Crypto::libbcrypt"
+               BuildableName = "libbcrypt.framework"
+               BlueprintName = "libbcrypt"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::NIOConcurrencyHelpers"
+               BuildableName = "NIOConcurrencyHelpers.framework"
+               BlueprintName = "NIOConcurrencyHelpers"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -462,9 +364,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Multipart::Multipart"
-               BuildableName = "Multipart.framework"
-               BlueprintName = "Multipart"
+               BlueprintIdentifier = "Routing::Routing"
+               BuildableName = "Routing.framework"
+               BlueprintName = "Routing"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -476,9 +378,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DatabaseKit::DatabaseKit"
-               BuildableName = "DatabaseKit.framework"
-               BlueprintName = "DatabaseKit"
+               BlueprintIdentifier = "Crypto::Crypto"
+               BuildableName = "Crypto.framework"
+               BlueprintName = "Crypto"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::NIO"
+               BuildableName = "NIO.framework"
+               BlueprintName = "NIO"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -504,23 +420,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Core::Debugging"
-               BuildableName = "Debugging.framework"
-               BlueprintName = "Debugging"
-               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-nio::NIOPriorityQueue"
-               BuildableName = "NIOPriorityQueue.framework"
-               BlueprintName = "NIOPriorityQueue"
+               BlueprintIdentifier = "swift-nio::CNIOSHA1"
+               BuildableName = "CNIOSHA1.framework"
+               BlueprintName = "CNIOSHA1"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -546,9 +448,107 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Crypto::Random"
-               BuildableName = "Random.framework"
-               BlueprintName = "Random"
+               BlueprintIdentifier = "Console::Command"
+               BuildableName = "Command.framework"
+               BlueprintName = "Command"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::NIOTLS"
+               BuildableName = "NIOTLS.framework"
+               BlueprintName = "NIOTLS"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Vaporized-BilibiliCD::Run"
+               BuildableName = "Run"
+               BlueprintName = "Run"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio-ssl::CNIOOpenSSL"
+               BuildableName = "CNIOOpenSSL.framework"
+               BlueprintName = "CNIOOpenSSL"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BilibiliKit::BilibiliKit"
+               BuildableName = "BilibiliKit.framework"
+               BlueprintName = "BilibiliKit"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "URLEncodedForm::URLEncodedForm"
+               BuildableName = "URLEncodedForm.framework"
+               BlueprintName = "URLEncodedForm"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-nio::CNIOHTTPParser"
+               BuildableName = "CNIOHTTPParser.framework"
+               BlueprintName = "CNIOHTTPParser"
+               ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DatabaseKit::DatabaseKit"
+               BuildableName = "DatabaseKit.framework"
+               BlueprintName = "DatabaseKit"
                ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -587,9 +587,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "swift-nio::CNIOSHA1"
-            BuildableName = "CNIOSHA1.framework"
-            BlueprintName = "CNIOSHA1"
+            BlueprintIdentifier = "Multipart::Multipart"
+            BuildableName = "Multipart.framework"
+            BlueprintName = "Multipart"
             ReferencedContainer = "container:Vaporized-BilibiliCD.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
