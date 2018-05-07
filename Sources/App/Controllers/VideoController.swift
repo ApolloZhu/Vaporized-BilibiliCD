@@ -1,5 +1,5 @@
 //
-//  AVController.swift
+//  VideoController
 //  App
 //
 //  Created by Apollo Zhu on 5/6/18.
@@ -9,16 +9,26 @@ import Vapor
 import Foundation
 import BilibiliKit
 
-struct AVController {
-    static func url(for aid: Int) -> Future<String> {
-        let promise = EmbeddedEventLoop().newPromise(String.self)
+struct VideoController {
+
+    static func info(for aid: Int) -> Future<Info> {
+        let promise = EmbeddedEventLoop().newPromise(Info.self)
         BKVideo(av: aid).getInfo {
-            guard let url = $0?.coverImageURL else {
+            guard let bkInfo = $0 else {
                 return promise.fail(error: Abort(.notFound))
             }
-            promise.succeed(result: url.absoluteString)
+            let info = Info(
+                url: bkInfo.coverImageURL.absoluteString,
+                title: bkInfo.title,
+                author: bkInfo.author
+            )
+            promise.succeed(result: info)
         }
         return promise.futureResult
+    }
+
+    static func url(for aid: Int) -> Future<String> {
+        return info(for: aid).map { $0.url }
     }
 
     static func get(_ req: Request) throws -> Future<String> {
@@ -36,5 +46,9 @@ struct AVController {
                 return response
             }
         }
+    }
+
+    static func info(_ req: Request) throws -> Future<Info> {
+        return try info(for: req.parameters.next(Int.self))
     }
 }

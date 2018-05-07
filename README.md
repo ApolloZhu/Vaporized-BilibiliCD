@@ -9,9 +9,10 @@
 
 |功能|链接|
 |-:|--|
-|下载|bilibilicd.vapor.cloud/download/:aid|
-|展示|bilibilicd.vapor.cloud/show/:aid|
-|链接|bilibilicd.vapor.cloud/url/:aid|
+|下载|bilibilicd.vapor.cloud/av/download/:aid|
+|展示|bilibilicd.vapor.cloud/av/show/:aid|
+|链接|bilibilicd.vapor.cloud/av/url/:aid|
+|信息|bilibilicd.vapor.cloud/av/info/:aid|
 |UI（暂未实现）|bilibilicd.vapor.cloud/av/:aid|
 
 ## License [![GPL License](https://img.shields.io/github/license/apollozhu/vaporized-bilibilicd.svg)](./LICENSE)

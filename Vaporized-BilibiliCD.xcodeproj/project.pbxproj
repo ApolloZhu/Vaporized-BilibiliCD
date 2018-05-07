@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		52DE7F30209FE40D00C5E3BF /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE7F2F209FE40D00C5E3BF /* Info.swift */; };
 		OBJ_1002 /* shim.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_638 /* shim.c */; };
 		OBJ_1008 /* c_nio_http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_544 /* c_nio_http_parser.c */; };
 		OBJ_1014 /* shim.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_550 /* shim.c */; };
@@ -800,9 +801,7 @@
 		OBJ_2358 /* blf.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_329 /* blf.c */; };
 		OBJ_2365 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_377 /* Package.swift */; };
 		OBJ_2371 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_656 /* Package.swift */; };
-		OBJ_703 /* AVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AVController.swift */; };
-		OBJ_704 /* TodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* TodoController.swift */; };
-		OBJ_705 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Todo.swift */; };
+		OBJ_703 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* VideoController.swift */; };
 		OBJ_706 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* app.swift */; };
 		OBJ_707 /* boot.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* boot.swift */; };
 		OBJ_708 /* configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* configure.swift */; };
@@ -3952,6 +3951,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52DE7F2F209FE40D00C5E3BF /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		"BilibiliKit::BilibiliKit::Product" /* BilibiliKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BilibiliKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3967,7 +3967,7 @@
 		"DatabaseKit::DatabaseKit::Product" /* DatabaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DatabaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTP::HTTP::Product" /* HTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Multipart::Multipart::Product" /* Multipart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Multipart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* AVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVController.swift; sourceTree = "<group>"; };
+		OBJ_10 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		OBJ_100 /* NIOServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOServerConfig.swift; sourceTree = "<group>"; };
 		OBJ_101 /* RunningServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningServer.swift; sourceTree = "<group>"; };
 		OBJ_102 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
@@ -3976,7 +3976,6 @@
 		OBJ_106 /* VaporProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporProvider.swift; sourceTree = "<group>"; };
 		OBJ_108 /* KeyedCacheSessions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedCacheSessions.swift; sourceTree = "<group>"; };
 		OBJ_109 /* MemorySessions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySessions.swift; sourceTree = "<group>"; };
-		OBJ_11 /* TodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoController.swift; sourceTree = "<group>"; };
 		OBJ_110 /* Request+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Session.swift"; sourceTree = "<group>"; };
 		OBJ_111 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		OBJ_112 /* SessionCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCache.swift; sourceTree = "<group>"; };
@@ -3994,7 +3993,6 @@
 		OBJ_127 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
 		OBJ_128 /* WebSocketResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketResponder.swift; sourceTree = "<group>"; };
 		OBJ_129 /* WebSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServer.swift; sourceTree = "<group>"; };
-		OBJ_13 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		OBJ_132 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/Apollonian/Documents/Git-Repo/Vaporized-BilibiliCD/.build/checkouts/vapor.git-5492988889259800272/Package.swift"; sourceTree = "<group>"; };
 		OBJ_135 /* Exports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exports.swift; sourceTree = "<group>"; };
 		OBJ_136 /* WebSocket+Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebSocket+Client.swift"; sourceTree = "<group>"; };
@@ -5250,7 +5248,7 @@
 		OBJ_12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* Todo.swift */,
+				52DE7F2F209FE40D00C5E3BF /* Info.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -6459,7 +6457,7 @@
 			path = ".build/checkouts/core.git-9210800844849382486/Sources/Async";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -6469,7 +6467,6 @@
 				OBJ_24 /* Dependencies */,
 				OBJ_657 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_508 /* Core */ = {
@@ -6987,8 +6984,7 @@
 		OBJ_9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* AVController.swift */,
-				OBJ_11 /* TodoController.swift */,
+				OBJ_10 /* VideoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -8329,7 +8325,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_657 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -9191,9 +9187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_703 /* AVController.swift in Sources */,
-				OBJ_704 /* TodoController.swift in Sources */,
-				OBJ_705 /* Todo.swift in Sources */,
+				OBJ_703 /* VideoController.swift in Sources */,
+				52DE7F30209FE40D00C5E3BF /* Info.swift in Sources */,
 				OBJ_706 /* app.swift in Sources */,
 				OBJ_707 /* boot.swift in Sources */,
 				OBJ_708 /* configure.swift in Sources */,
