@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BCD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body style="text-align: center;">
+    <h1>Welcome to Bilibili Cover Downloader</h1>
+    You are using the "vaporized" version written in Swift.
+    <form action="/" method="get">
+        <select name="type" id="type">
+            <option value="av">av</option>
+            <option value="lv">lv</option>
+            <option value="cv">cv</option>
+        </select>
+        <input type="text" name="id" id="id" required>
+        <button type="submit"><i class="material-icons">search</i></button>
+    </form>
+</body>
+</html>

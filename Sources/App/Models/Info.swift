@@ -1,10 +1,3 @@
-//
-//  Info.swift
-//  App
-//
-//  Created by Apollo Zhu on 5/6/18.
-//
-
 import Vapor
 
 struct Info: Content {
