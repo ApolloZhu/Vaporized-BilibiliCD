@@ -1,4 +1,4 @@
 module CNIOSHA1 {
-    umbrella "/Users/Apollonian/Documents/Git-Repo/Vaporized-BilibiliCD/.build/checkouts/swift-nio.git-3108475404973543938/Sources/CNIOSHA1/include"
+    umbrella "/Users/apollonian/Documents/Git-Repo/Vaporized-BilibiliCD/.build/checkouts/swift-nio.git-3108475404973543938/Sources/CNIOSHA1/include"
     export *
 }
