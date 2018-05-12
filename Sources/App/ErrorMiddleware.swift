@@ -59,7 +59,7 @@ public final class ErrorMiddleware: Middleware, ServiceType {
             }
             
             // create a Response with appropriate status
-            let res = req.makeResponse(http: .init(status: status, headers: headers))
+            let res = req.makeResponse(http: .init(status: .ok, headers: headers))
             
             // attempt to serialize the error to json
             do {
