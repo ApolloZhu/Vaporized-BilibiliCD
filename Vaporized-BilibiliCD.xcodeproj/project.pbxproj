@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		52137B3220A68A080045EDD1 /* ErrorMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52137B3120A68A080045EDD1 /* ErrorMiddleware.swift */; };
 		OBJ_1000 /* ByteBuffer+binaryFloatingPointOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_503 /* ByteBuffer+binaryFloatingPointOperations.swift */; };
 		OBJ_1001 /* ByteBuffer+peek.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_504 /* ByteBuffer+peek.swift */; };
 		OBJ_1002 /* ByteBuffer+require.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_505 /* ByteBuffer+require.swift */; };
@@ -4134,6 +4135,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52137B3120A68A080045EDD1 /* ErrorMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMiddleware.swift; sourceTree = "<group>"; };
 		"BilibiliKit::BilibiliKit::Product" /* BilibiliKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BilibiliKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6673,7 +6675,7 @@
 			path = ".build/checkouts/core.git-9210800844849382486/Sources/Bits";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -6684,7 +6686,6 @@
 				OBJ_27 /* Dependencies */,
 				OBJ_678 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_511 /* COperatingSystem */ = {
@@ -7237,6 +7238,7 @@
 				OBJ_17 /* boot.swift */,
 				OBJ_18 /* configure.swift */,
 				OBJ_19 /* routes.swift */,
+				52137B3120A68A080045EDD1 /* ErrorMiddleware.swift */,
 			);
 			name = App;
 			path = Sources/App;
@@ -8671,7 +8673,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_678 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -9569,6 +9571,7 @@
 				OBJ_726 /* ResultController + Route.swift in Sources */,
 				OBJ_727 /* ResultController.swift in Sources */,
 				OBJ_728 /* SearchController.swift in Sources */,
+				52137B3220A68A080045EDD1 /* ErrorMiddleware.swift in Sources */,
 				OBJ_729 /* Info.swift in Sources */,
 				OBJ_730 /* app.swift in Sources */,
 				OBJ_731 /* boot.swift in Sources */,
