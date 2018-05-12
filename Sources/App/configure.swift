@@ -1,25 +1,14 @@
 import Leaf
 import Vapor
 
-/// Captures all errors and transforms them into an internal server error HTTP response.
-public final class ErrorMiddleware: Middleware, ServiceType {
-    /// See `ServiceType`.
-    public static func makeService(for worker: Container) throws -> ErrorMiddleware {
+class MyErrorMiddleware: Middleware, ServiceType {
+    class func makeService(for worker: Container) throws -> Self {
         return try .default(environment: worker.environment, log: worker.make())
     }
     
-    /// Create a default `ErrorMiddleware`. Logs errors to a `Logger` based on `Environment`
-    /// and converts `Error` to `Response` based on conformance to `AbortError` and `Debuggable`.
-    ///
-    /// - parameters:
-    ///     - environment: The environment to respect when presenting errors.
-    ///     - log: Log destination.
-    public static func `default`(environment: Environment, log: Logger) -> ErrorMiddleware {
-        /// Structure of `ErrorMiddleware` default response.
+    class func `default`(environment: Environment, log: Logger) -> Self {
         struct ErrorResponse: Encodable {
             var error: UInt
-            
-            /// The reason for the error.
             var reason: String
         }
         
@@ -30,7 +19,7 @@ public final class ErrorMiddleware: Middleware, ServiceType {
             // variables to determine
             let status: HTTPResponseStatus
             let reason: String
-            let headers: HTTPHeaders
+            var headers: HTTPHeaders = [:]
             
             // inspect the error type
             switch error {
@@ -43,25 +32,16 @@ public final class ErrorMiddleware: Middleware, ServiceType {
                 // this is a validation error
                 reason = validation.reason
                 status = .badRequest
-                headers = [:]
             case let debuggable as Debuggable where !environment.isRelease:
                 // if not release mode, and error is debuggable, provide debug
                 // info directly to the developer
                 reason = debuggable.reason
                 status = .internalServerError
-                headers = [:]
             default:
-                // not an abort error, and not debuggable or in dev mode
-                // just deliver a generic 500 to avoid exposing any sensitive error info
                 reason = "Something went wrong."
                 status = .internalServerError
-                headers = [:]
             }
-            
-            // create a Response with appropriate status
             let res = req.makeResponse(http: .init(status: status, headers: headers))
-            
-            // attempt to serialize the error to json
             do {
                 let errorResponse = ErrorResponse(error: status.code, reason: reason)
                 res.http.body = try HTTPBody(data: JSONEncoder().encode(errorResponse))
@@ -74,18 +54,12 @@ public final class ErrorMiddleware: Middleware, ServiceType {
         }
     }
     
-    /// Error-handling closure.
     private let closure: (Request, Error) -> (Response)
     
-    /// Create a new `ErrorMiddleware`.
-    ///
-    /// - parameters:
-    ///     - closure: Error-handling closure. Converts `Error` to `Response`.
     public init(_ closure: @escaping (Request, Error) -> (Response)) {
         self.closure = closure
     }
     
-    /// See `Middleware`.
     public func respond(to req: Request, chainingTo next: Responder) throws -> Future<Response> {
         let response: Future<Response>
         do {
@@ -93,7 +67,6 @@ public final class ErrorMiddleware: Middleware, ServiceType {
         } catch {
             response = req.eventLoop.newFailedFuture(error: error)
         }
-        
         return response.mapIfError { error in
             return self.closure(req, error)
         }
