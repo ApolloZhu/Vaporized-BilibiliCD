@@ -7,7 +7,7 @@ struct VideoController: ResultController {
         let promise = EmbeddedEventLoop().newPromise(Info.self)
         BKVideo(av: aid).getInfo {
             guard let bkInfo = $0 else {
-                return promise.fail(error: Abort(.notFound))
+                return promise.fail(error: Abort(.noContent))
             }
             let info = Info(
                 url: bkInfo.coverImageURL.absoluteString,
@@ -25,7 +25,7 @@ struct ArticleController: ResultController {
         let promise = EmbeddedEventLoop().newPromise(Info.self)
         BKArticle(cv: cvID).getInfo {
             guard let bkInfo = $0 else {
-                return promise.fail(error: Abort(.notFound))
+                return promise.fail(error: Abort(.noContent))
             }
             let info = Info(
                 url: bkInfo.coverImageURL.absoluteString,
@@ -43,7 +43,7 @@ struct LiveRoomController: ResultController {
         let promise = EmbeddedEventLoop().newPromise(Info.self)
         BKLiveRoom(id).getInfo {
             guard let bkInfo = $0 else {
-                return promise.fail(error: Abort(.notFound))
+                return promise.fail(error: Abort(.noContent))
             }
             let info = Info(
                 url: bkInfo.coverImageURL.absoluteString,
