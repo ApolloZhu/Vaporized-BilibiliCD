@@ -3,56 +3,56 @@ import Foundation
 import BilibiliKit
 
 struct VideoController: ResultController {
-    static func info(for aid: Int) -> Future<Info> {
-        let promise = EmbeddedEventLoop().newPromise(Info.self)
-        BKVideo(av: aid).getInfo {
-            guard let bkInfo = $0 else {
-                return promise.fail(error: Abort(.noContent))
-            }
-            let info = Info(
-                url: bkInfo.coverImageURL.absoluteString,
-                title: bkInfo.title,
-                author: bkInfo.author
-            )
-            promise.succeed(result: info)
+    static var route: [PathComponent] = ["av"]
+    
+    static func getInfo(for aid: Int, toComplete promise: EventLoopPromise<Info>) {
+        BKVideo.av(aid).getInfo {
+            promise.completeWith($0.map { bkInfo in
+                Info(
+                    url: bkInfo.coverImageURL.absoluteString,
+                    title: bkInfo.title,
+                    author: bkInfo.author.name
+                )
+            }.withTypeErasedError)
         }
-        return promise.futureResult
     }
 }
 
 struct ArticleController: ResultController {
-    static func info(for cvID: Int) -> Future<Info> {
-        let promise = EmbeddedEventLoop().newPromise(Info.self)
+    static var route: [PathComponent] = ["cv"]
+    
+    static func getInfo(for cvID: Int, toComplete promise: EventLoopPromise<Info>) {
         BKArticle(cv: cvID).getInfo {
-            guard let bkInfo = $0 else {
-                return promise.fail(error: Abort(.noContent))
-            }
-            let info = Info(
-                url: bkInfo.coverImageURL.absoluteString,
-                title: bkInfo.title,
-                author: bkInfo.author
-            )
-            promise.succeed(result: info)
+            promise.completeWith($0.map { bkInfo in
+                Info(
+                    url: bkInfo.coverImageURL.absoluteString,
+                    title: bkInfo.title,
+                    author: bkInfo.author
+                )
+            }.withTypeErasedError)
         }
-        return promise.futureResult
     }
 }
 
 struct LiveRoomController: ResultController {
-    static func info(for id: Int) -> Future<Info> {
-        let promise = EmbeddedEventLoop().newPromise(Info.self)
+    static var route: [PathComponent] = ["lv"]
+    
+    static func getInfo(for id: Int, toComplete promise: EventLoopPromise<Info>) {
         BKLiveRoom(id).getInfo {
-            guard let bkInfo = $0 else {
-                return promise.fail(error: Abort(.noContent))
-            }
-            let info = Info(
-                url: bkInfo.coverImageURL.absoluteString,
-                title: bkInfo.title,
-                // FIXME: Look up author name (uname)
-                author: "\(bkInfo.mid)"
-            )
-            promise.succeed(result: info)
+            promise.completeWith($0.map { bkInfo in
+                Info(
+                    url: bkInfo.coverImageURL.absoluteString,
+                    title: bkInfo.title,
+                    // FIXME: Look up author name (uname)
+                    author: "\(bkInfo.mid)"
+                )
+            }.withTypeErasedError)
         }
-        return promise.futureResult
+    }
+}
+
+extension Result {
+    var withTypeErasedError: Result<Success, Error> {
+        mapError { $0 as Error }
     }
 }

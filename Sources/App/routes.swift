@@ -1,12 +1,17 @@
 import Vapor
 
 /// Register your application's routes here.
-public func routes(_ router: Router) throws {
-    router.get("license") { _ in license }
+func routes(_ app: Application) throws {
+    app.get("license") { req in
+        req.redirect(to: "https://github.com/ApolloZhu/Vaporized-BilibiliCD/blob/master/LICENSE")
+    }
 
-    router.register(VideoController.self, asGroup: "av")
-    router.register(ArticleController.self, asGroup: "cv")
-    router.register(LiveRoomController.self, asGroup: "lv")
-    
-    router.get("/", use: SearchController.view)
+    try app.register(collection: VideoController())
+    try app.register(collection: ArticleController())
+    try app.register(collection: LiveRoomController())
+
+    // Search UI
+    app.get { req in
+        return req.view.render("main")
+    }
 }

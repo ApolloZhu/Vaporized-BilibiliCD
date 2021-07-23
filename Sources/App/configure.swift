@@ -1,18 +1,22 @@
 import Leaf
 import Vapor
 
+let license = """
+Vaporized BilibiliCD.  Copyright (C) 2018-2021  Zhiyu Zhu (@ApolloZhu)
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+This is free software, and you are welcome to redistribute it
+under certain conditions; request /license for details.
+
+"""
+
+typealias Future = EventLoopFuture
+
 /// Called before your application initializes.
-public func configure(_ config: inout Config, _ env: inout Environment, _ services: inout Services) throws {
-    /// Register routes to the router
-    let router = EngineRouter.default()
-    try routes(router)
-    services.register(router, as: Router.self)
+public func configure(_ app: Application) throws {
+    print(license)
 
-    /// Register middleware
-    var middlewares = MiddlewareConfig() // Create _empty_ middleware config
-    middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
-    services.register(middlewares)
+    /// Use Leaf for view rendering.
+    app.views.use(.leaf)
 
-    /// To enable routes rendering Leaf templates as needed
-    try services.register(LeafProvider())
+    try routes(app)
 }
