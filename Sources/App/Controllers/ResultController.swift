@@ -2,5 +2,9 @@ import Vapor
 
 protocol ResultController: RouteCollection {
     static var route: [PathComponent] { get }
-    static func getInfo(for id: Int, toComplete promise: EventLoopPromise<Info>)
+    static func info(for id: Int) async throws -> Info
+}
+
+func makePath(_ components: PathComponent...) -> [PathComponent] {
+    return components
 }

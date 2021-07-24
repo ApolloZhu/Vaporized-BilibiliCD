@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.5
 // Managed by ice
 
 import PackageDescription
@@ -6,14 +6,14 @@ import PackageDescription
 let package = Package(
     name: "Vaporized-BilibiliCD",
     platforms: [
-        .macOS(.v10_15),
+        .macOS(.v12),
     ],
     products: [
         .executable(name: "Run", targets: ["Run"]),
         .library(name: "App", targets: ["App"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.48.2"),
+        .package(url: "https://github.com/vapor/vapor.git", .branch("async-await")),
         .package(url: "https://github.com/ApolloZhu/BilibiliKit", .branch("rsa")),
         .package(url: "https://github.com/vapor/leaf", from: "4.1.2"),
     ],

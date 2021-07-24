@@ -11,38 +11,32 @@ extension ResultController {
 
     static func id(from req: Request) throws -> Int {
         guard let id = req.parameters.get("id", as: Int.self) else {
-            throw Abort(.badRequest, reason: "Missing id")
+            throw Abort(.badRequest, reason: "Missing or invalid id")
         }
         return id
     }
 }
 
 extension ResultController {
-    static func info(_ req: Request) throws -> Future<Info> {
+    static func info(_ req: Request) async throws -> Info {
         let id = try id(from: req)
-        let promise = req.eventLoop.makePromise(of: Info.self)
-        getInfo(for: id, toComplete: promise)
-        return promise.futureResult
+        return try await info(for: id)
     }
 
-    static func plainStringURL(_ req: Request) throws -> Future<String> {
-        return try info(req).map { $0.url }
+    static func plainStringURL(_ req: Request) async throws -> String {
+        try await info(req).url
     }
 
-    static func redirectToSource(_ req: Request) throws -> Future<Response> {
-        return try plainStringURL(req).map { req.redirect(to: $0) }
+    static func redirectToSource(_ req: Request) async throws -> Response {
+        req.redirect(to: try await plainStringURL(req))
     }
 
-    static func downloadImage(_ req: Request) throws -> Future<ClientResponse> {
-        return try plainStringURL(req).flatMap { url in
-            req.client.get(URI(string: url))
-        }.map { response in
-            var copy = response
-            copy.headers.add(
-                name: .contentDisposition,
-                value: "attachment"
-            )
-            return copy
-        }
+    static func downloadImage(_ req: Request) async throws -> ClientResponse {
+        var response = try await req.client.get(URI(string: plainStringURL(req)))
+        response.headers.add(
+            name: .contentDisposition,
+            value: "attachment"
+        )
+        return response
     }
 }

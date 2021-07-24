@@ -3,56 +3,56 @@ import Foundation
 import BilibiliKit
 
 struct VideoController: ResultController {
-    static var route: [PathComponent] = ["av"]
-    
-    static func getInfo(for aid: Int, toComplete promise: EventLoopPromise<Info>) {
-        BKVideo.av(aid).getInfo {
-            promise.completeWith($0.map { bkInfo in
-                Info(
-                    url: bkInfo.coverImageURL.absoluteString,
-                    title: bkInfo.title,
-                    author: bkInfo.author.name
-                )
-            }.withTypeErasedError)
+    static var route = makePath("av")
+
+    static func info(for aid: Int) async throws -> Info {
+        return try await withCheckedThrowingContinuation { continuation in
+            BKVideo.av(aid).getInfo {
+                continuation.resume(with: $0.map { bkInfo in
+                    Info(
+                        url: bkInfo.coverImageURL.absoluteString,
+                        title: bkInfo.title,
+                        author: bkInfo.author.name
+                    )
+                })
+            }
         }
     }
 }
 
 struct ArticleController: ResultController {
-    static var route: [PathComponent] = ["cv"]
-    
-    static func getInfo(for cvID: Int, toComplete promise: EventLoopPromise<Info>) {
-        BKArticle(cv: cvID).getInfo {
-            promise.completeWith($0.map { bkInfo in
-                Info(
-                    url: bkInfo.coverImageURL.absoluteString,
-                    title: bkInfo.title,
-                    author: bkInfo.author
-                )
-            }.withTypeErasedError)
+    static var route = makePath("cv")
+
+    static func info(for cvID: Int) async throws -> Info {
+        return try await withCheckedThrowingContinuation { continuation in
+            BKArticle(cv: cvID).getInfo {
+                continuation.resume(with: $0.map { bkInfo in
+                    Info(
+                        url: bkInfo.coverImageURL.absoluteString,
+                        title: bkInfo.title,
+                        author: bkInfo.author
+                    )
+                })
+            }
         }
     }
 }
 
 struct LiveRoomController: ResultController {
-    static var route: [PathComponent] = ["lv"]
-    
-    static func getInfo(for id: Int, toComplete promise: EventLoopPromise<Info>) {
-        BKLiveRoom(id).getInfo {
-            promise.completeWith($0.map { bkInfo in
-                Info(
-                    url: bkInfo.coverImageURL.absoluteString,
-                    title: bkInfo.title,
-                    // FIXME: Look up author name (uname)
-                    author: "\(bkInfo.mid)"
-                )
-            }.withTypeErasedError)
-        }
-    }
-}
+    static var route = makePath("lv")
 
-extension Result {
-    var withTypeErasedError: Result<Success, Error> {
-        mapError { $0 as Error }
+    static func info(for id: Int) async throws -> Info {
+        return try await withCheckedThrowingContinuation { continuation in
+            BKLiveRoom(id).getInfo {
+                continuation.resume(with: $0.map { bkInfo in
+                    Info(
+                        url: bkInfo.coverImageURL.absoluteString,
+                        title: bkInfo.title,
+                        // FIXME: Look up author name (uname)
+                        author: "\(bkInfo.mid)"
+                    )
+                })
+            }
+        }
     }
 }
