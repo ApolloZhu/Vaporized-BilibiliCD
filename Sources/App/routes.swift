@@ -3,7 +3,7 @@ import Vapor
 /// Register your application's routes here.
 func routes(_ app: Application) throws {
     app.get("license") { req in
-        req.redirect(to: "https://github.com/ApolloZhu/Vaporized-BilibiliCD/blob/master/LICENSE")
+        req.redirect(to: License.url)
     }
 
     try app.register(collection: VideoController())
@@ -12,6 +12,6 @@ func routes(_ app: Application) throws {
 
     // Search UI
     app.get { req in
-        return req.view.render("main")
+        req.view.render("main")
     }
 }
